@@ -37,7 +37,7 @@ function fetchData(){
 
       img.src = article.urlToImage;  // Add the source of the image to be the src of the img element
       h3.innerHTML = `${article.title}`
-      span.innerHTML = `${article.description}<br><a href="${article.url}">read more here</a><hr>`
+      span.innerHTML = `${article.description}<br><a href="${article.url}">${article.url}</a><hr>`
      
       append(li, img); // Append all our elements
       append(li, h3);
